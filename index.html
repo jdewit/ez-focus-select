@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.0.3/css/bootstrap.css" rel="stylesheet">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.9/angular.min.js"></script>
+
+  <script src="src/ez-focus-select.js"></script>
+
+  <script>
+      angular.module('myApp', ['ez.focus-select'])
+
+      .controller('AppCtrl', ['$scope', function AppCtrl($scope) {
+
+      }]);
+    ;
+
+  </script>
+</head>
+<body ng-app="myApp">
+  <div ng-controller="AppCtrl" class="container">
+    <div class="page-header">
+      <h1>ez-focus-select</h1>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <label>Label</label>
+        <input type="text" ez-focus-select value="some text"/>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
